@@ -4,19 +4,14 @@
 \begin{columns}
  \begin{column}{.72\textwidth}
 
-		usati in protezione {\color{blue}integrità transazioni} %�
 		\begin{itemize}
-			\item foglia $\leftrightarrow\; \mathfrak{T}$
-			\item $\neg$ foglia $\leftrightarrow$ hash dei due figli
-			\vspace{5pt}
-			\item decidere se una foglia $\in$ 
-			\begin{itemize}
-				\item lista: $O(\orange{N})$
-				\item albero: $O(\orange{\log_2 N}) \ll O(N)$
-				
-			\end{itemize}
-			\vspace{5pt}
-			\item Bitcoin: $\;\mathrm{hash}(\orange{n})=SHA_{256}(SHA_{256}(\orange{\mathcal{L}_n}|\orange{\mathcal{R}_n}))$
+			\item foglie $\leftrightarrow$ transazioni
+			\item altri nodi $\leftrightarrow$ hash dei loro figli
+			\item dimostrare che una foglia $\in$ albero: $O(\orange{\log_2 N})$
+			\item usando una lista: $O(N) \gg O(\log_2 N)$
+			\item protegge integrità transazioni
+			\item nati per firme \textit{one time} di \textit{Lamport}
+			\item Bitcoin: $\;hash_n=SHA_{256}(SHA_{256}(\mathcal{L}_n|\mathcal{R}_n))$
 		\end{itemize}
 
 	\end{column}

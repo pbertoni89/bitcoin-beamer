@@ -65,10 +65,11 @@
 \end{frame}
 % ----SEZIONI--------------------------------------------------------------------
 \section{Introduzione}
-\subsection{Definizione di una criptovaluta}
+\subsection{Problema} % %\subsection[Short First Subsection Name]{Problema}
 	\input{frames/problema_valuta}
 	\input{frames/problema_transazioni}
 	\input{frames/problema_proofofwork}
+\subsection{Caratteristiche di una criptovaluta}
 	\input{frames/diffeuro}
 	\input{frames/chaum_ecash}
 \subsection{Elementi teorici}
@@ -82,9 +83,10 @@
 	\input{frames/struct_blocco}
 	\input{frames/passg_transazioni_blocchi}
 	\input{frames/passg_blocchi_blockchain}
-	\input{frames/motivazione_fees}
+	%\input{frames/motivazione_mining} %deve essere invitante lavorare per la rete, non contro essa
 	\input{frames/motivazione_coinbase}
-\subsection{Primitive criptografiche}
+	\input{frames/motivazione_fees}
+\subsection{Primitive criptografiche} %forse, ma non credo, vanno in testa alla sezione
 	\input{frames/primitive_ecdsa}
 	\input{frames/primitive_sha256}
 \subsection{Modello formale di sicurezza}
@@ -100,6 +102,7 @@
 	\input{frames/attacchi_anonimita}
 \subsection{Double spending}
 	\input{frames/attacchi_dspending}
-	%\input{frames/approfondimenti}
+	%TODO eventualmente \input{frames/concatenamento_fork}
+	%GRINGO \input{frames/approfondimenti}
 % -------------------------------------------------------------------------
 \end{document}

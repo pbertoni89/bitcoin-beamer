@@ -2,11 +2,11 @@
 	\frametitle{Criptovaluta}
 	\framesubtitle{specifiche sulle transazioni}
 	
-	\textit{problema} \vspace{5pt}
+	\textit{Problema}
 	\newline trasmettere {\color{blue}transazioni} di valuta tra enti
 	\begin{itemize}
 	  \item pubbliche
-	  \item anonime $\Rightarrow$ tra \textbf{indirizzi}, non utenti
+	  \item anonime $\Rightarrow$ tra \textbf{indirizzi}, non tra utenti
 	  \item autenticate
 	  \item non ripudiabili
 	  \item irreversibili
@@ -16,19 +16,21 @@
 \end{frame}
 	
 \begin{frame}
-	\frametitle{Criptovaluta}
-	\framesubtitle{idea astratta di transazione $\mathfrak{T}$}
+	\frametitle{Transazione $\mathfrak{T}$}
+	\framesubtitle{idea astratta}
 	
 	\begin{itemize}
-	  \item atto tra $\orange{N}$ mittenti e $\orange{M}$ destinatari
-	  \item utenti incoraggiati a usare un indirizzo unico $\forall \;\orange{\mathfrak{T}}$
-	  \item $\sim$ {\color{blue}assegno}
-	  \newline \textit{``in data $t$, $\{\orange{x}\}_{\,1}^N$ ha versato} tot \textit{a $\{\orange{y}\}_{\,1}^M$ che ora ne è proprietario''}
+	  \item unica modalità di circolazione della valuta
+	  \item atto tra $N$ mittenti e $M$ destinatari
+	  \item gli enti sono \textit{indirizzi}, \textbf{non} persone!
+	  \item utenti incoraggiati a usare un indirizzo unico $\forall$ loro $\mathfrak{T}$
+	  \item $\mathfrak{T}$ paragonabile a un {\color{blue}assegno}
+	  \newline \textit{``si certifica che, in data $t$,}
+	  \newline \textit{$\{x\}$ ha versato} tot \bitcoinA\,\textit{a $\{y\}$, che ora ne è proprietario.''}
 	\end{itemize}
 	gestione del {\color{blue}resto}
 	\begin{itemize}
-		\item $\orange{y'}\in\{\orange{y}\}$ destinatari, controllato da chi
-		emette $\orange{\mathfrak{T}}$
-		\item deframmentare: nuova $\orange{\mathfrak{T}}$ con molteplici mittenti
+		\item $y'\in\{y\}$ destinatari, indirizzo controllato da chi emette $\mathfrak{T}$
+		\item diversi resti frammentati sono riuniti come molteplici mittenti 
 	\end{itemize}
 \end{frame}

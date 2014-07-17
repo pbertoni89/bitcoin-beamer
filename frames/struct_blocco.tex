@@ -6,19 +6,22 @@
 	  \centering
 	  \begin{tabular}{ll}
 	   	{\color{blue}Header} & {\color{blue}Payload} \\
-			\tabitem hash di $\orange{\mathfrak{B}_{i-1}^{\mathfrak{H}}}$ 
-				& \tabitem lista transazioni $\{\orange{\mathfrak{T}}\}_{\orange{\mathfrak{B}}}$ \\
-			\tabitem MerkleTree di $\{\orange{\mathfrak{T}}\}_\orange{\mathfrak{B}}$ \\
-			\tabitem timestamp $\orange{t}$ \\
-			\tabitem target $\orange{z}$ \\
-			\tabitem nonce $\orange{x}$ \\
-			\tabitem titolare della \textit{coinbase} $\orange{\mathfrak{C}}$
+			\tabitem hash del blocco $\mathfrak{B}_{i-1}$ & \tabitem lista transazioni $\{\mathfrak{T}\}_\mathfrak{B}$ \\
+			\tabitem MerkleTree di $\{\mathfrak{T}\}_\mathfrak{B}$ \\
+			\tabitem timestamp corrente \\
+			\tabitem target $z$ (vedi dopo)\\
+			\tabitem nonce $x$ \\
+			\tabitem titolare $\mathfrak{T}$ di \textit{coinbase} (vedi dopo)
 	  \end{tabular}
 	\end{table}
 	
 	\begin{itemize}
 		\item durante \textit{mining} di $\mathfrak{B}$, campi continuamente modificati
 		\item $\mathfrak{B}$ descrive la propria \textit{proof of work}
+		\begin{itemize}
+			\item \textit{input}: header di $\mathfrak{B}$ 
+			\item \textit{funzione hash}: $\text{SHA}_{256}(\text{SHA}_{256}(\cdot))$
+		\end{itemize} 
 	\end{itemize}
 
 \end{frame}

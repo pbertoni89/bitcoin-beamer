@@ -1,8 +1,8 @@
 \begin{frame}
-	\frametitle{Funzioni di Hash One Way}
+	\frametitle{Funzioni di Hash}
 
 	\begin{itemize}
-		\item $\orange{h}:\orange{\mathbb{Z}}\rightarrow \orange{\mathbb{Z}_n}$ non iniettiva
+		\item $\orange{h}:\orange{\mathbb{Z}}\rightarrow \orange{\mathbb{Z}_n}$ non iniettiva, \textit{i.e.} one-way
 
 		\item resistenza a
 		\begin{itemize}
@@ -16,7 +16,9 @@
 		  \item autenticazione
 		  \item integrità
 		\end{itemize}
-		\item spesso firmato il {\color{blue}digest} $\orange{h}(\orange{m})$ anzichè $\orange{m}$
+		\item spesso viene firmato il {\color{blue}digest} $d=\orange{h}(\orange{m})$ anzichè $\orange{m}$
+		\newline nei sistemi di autenticazione e non ripudio
+		\item insieme ai \textit{salt} prevengono attacchi \textit{dizionario}
 	\end{itemize}
 
 \end{frame}

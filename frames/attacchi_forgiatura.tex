@@ -1,20 +1,19 @@
 \begin{frame}
-	\frametitle{forgiatura}
+	\frametitle{attacco alla firma digitale}
 	
-	unica possibilità: rubarli a qualcuno
+	unico modo per forgiare \bitcoinA: usare quelli di qualcuno
 	\begin{itemize}
-	  \item problema di forgiare dal nulla \textbf{non ha senso}
-	  \item  conoscere $\orange{K_{PR}}\;\Rightarrow$ rompere ECDSA
+	  \item il problema di forgiare dal nulla \textbf{non ha senso}
+	  \item  occorre appropriarsi di $K_{PR}\;\Rightarrow$ rompere ECDSA %SAY la cui sicurezza è già stata analizzata
 	\end{itemize}
-	\vspace{7pt}
 	se {\color{blue}quantum computers} implementati 
 	  \begin{itemize}
-	    \item rottura ECDSA \textit{può} diventare \textit{facile}
-	    \item collisione $\mathrm{SHA}_{256}$ resta \textit{difficile}
-	  	\begin{itemize}
-	  		\item indirizzi $\;\orange{\mathfrak{I}} = \mathrm{SHA}_{256}(\mathrm{SHA}_{256}(\orange{K_{PB}}))$
+	    \item rottura ECDSA può diventare \textit{facile}
+	    \item inversione $\mathrm{SHA}_{256}$ resta \textit{difficile}
+	  	\item indirizzi $\;\orange{\mathfrak{I}} = \mathrm{SHA}_{256}(\mathrm{SHA}_{256}(\orange{K_{PB}}))$
+		\begin{itemize}
 		    \item ottenere $K_{PB}$ dal solo $\mathfrak{I}$ è \textit{difficile}
-		    \item ma se è nota sistema rotto
+		    \item ma se è nota il sistema è rotto %SAY possibilissimo
 		\end{itemize}
 	  \end{itemize}
 \end{frame}

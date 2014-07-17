@@ -3,16 +3,15 @@
 	\framesubtitle{metodo Hashcash}
 	
 	\begin{itemize}
+	  \item nato per contrastare spam, DoS: serve un'operazione onerosa
 	  \item \textit{facile} verificare che il messaggio è soluzione di problema \textit{difficile}
 	  \item {\color{blue}brute force} unica tecnica risolutiva 
-	  \item Problema: dati $h:\mathbb{Z}\rightarrow\mathbb{Z}_n,\,m,\,z \leq n$, trovare nonce $\orange{x}:$
+	  \item Problema: dati $h:\mathbb{Z}\rightarrow\mathbb{Z}_n,\,m,\,z \leq n$, trovare nonce $x:$
 	  		%$$d=h(m|x) < T_z = \sum_{i=1}^{n-z}{2^i}$$ 
-	  		$$\orange{d}=\mathrm{hash}^{\mathrm{PoW}}(\orange{m}|\orange{x}) < \orange{T_z} = \orange{2^{n-z+1}}$$
-	   		\textit{i.e.} \textbf{digest ha $\orange{z}$ zeri non significativi}
-	   		(parametro {\color{blue}target}) $$\Pr[d<T_z|Z=z]=\frac{1}{2^z} \Rightarrow O(\orange{2^z})$$ %SAY dimensione media esponenziale della ricerca
-	  \item \fbox{problema risolto $\Leftrightarrow$ blocco $\mathfrak{B}$ risolto $\Leftrightarrow \{\mathfrak{T}\}_\mathfrak{B}$ convalidate}
-	  \item Bitcoin: $\;\mathrm{hash}^{\mathrm{PoW}}(\orange{\mathfrak{B}})
-	  					=SHA_{256}(SHA_{256}(\;[\orange{\mathrm{Header}}]_{\orange{\mathfrak{B}}}\;))$
+	  		$$d=\orange{h}(\orange{m}|\orange{x}) < T_z = \orange{2^{n-z+1}}$$
+	   		\textit{i.e.} \textbf{digest ha $z$ zeri non significativi} (parametro {\color{blue}target})
+	  		$$\Pr[d<T_z|Z=z]=\frac{1}{2^z} \Rightarrow \orange{O(2^z)}$$ %SAY dimensione media esponenziale della ricerca
+	  \item problema risolto $\Leftrightarrow$ blocco $\mathfrak{B}$ risolto $\Leftrightarrow \{\mathfrak{T}\}_\mathfrak{B}$ convalidate  
 	  \end{itemize}
 \end{frame}
 % ----------------------------------------------------------------------------------------------------------------------------
@@ -20,14 +19,14 @@
 	\frametitle{Proof of Work}
 	\framesubtitle{exempli gratia: $z=15$}	
 	 
-	$$ \mathrm{hash}(\mathrm{``hello\,world''}|\orange{001})=              9002381300129484192947128  $$
+	$$ \mathrm{hash}(\mathrm{``hello\,world''}|001)=              9002381300129484192947128  $$
 	$$ \vdots \;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\; \vdots$$
-	$$ \mathrm{hash}(\mathrm{``hello\,world''}|\orange{034})={\color{red}0000}834716283947104512438 $$
+	$$ \mathrm{hash}(\mathrm{``hello\,world''}|034)={\color{red}0000}834716283947104512438 $$
 	$$ \vdots \;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\; \vdots$$
-	$$ \mathrm{hash}(\mathrm{``hello\,world''}|\orange{415})={\color{green}00000000000000000000}83201 $$
+	$$ \mathrm{hash}(\mathrm{``hello\,world''}|415)={\color{green}00000000000000000000}83201 $$
 	\newline
 	{\color{blue}n.b.} \textit{gambler's fallacy}
-	$$\forall \orange{t_1},\,\orange{t_2} \;\;\; \Pr(Z=\orange{z},\,T=\orange{t_1})=\Pr(Z=\orange{z},\,T=\orange{t_2})$$
+	$$\forall t_1,t_2 \;\;\; \Pr(Z=z, T=t_1)=\Pr(Z=z, T=t_2)$$
 
 \end{frame}
 % ----------------------------------------------------------------------------------------------------------------------------
@@ -35,14 +34,12 @@
 	\frametitle{Proof of Work}
 	\framesubtitle{adattamento target}
 	
-	target $z_i$ ricalcolato ogni 2016 blocchi risolti $\sim$ 2 settimane
-	\begin{enumerate}
-		\item $\Delta_i^t \leftarrow t_{i} - t_{i-1}$
-		\item $\Delta_i^t \leftarrow \mathrm{clip}(\Delta_i,\,0.5,\,8)$
-		\item $z_{i+1} \leftarrow z_i\;\frac{\Delta_i^t}{2}$
-	\end{enumerate}
 	\begin{itemize}
-		\item $\orange{z} \propto \orange{\Delta^t} \Rightarrow$ {\color{blue}soluzioni veloci} abbassano target 
+		\item target $z_i$ ricalcolato ogni 2016 blocchi risolti $\sim$ 2 settimane
+		\item $\Delta_i \leftarrow t_{i} - t_{i-1}$
+		\item $\Delta_i \leftarrow \mathrm{clip}(\Delta_i,\,0.5,\,8)$
+		\item $z_{i+1} \leftarrow z_i\;\frac{\Delta_i}{2}$
+		\item $z \propto \Delta \Rightarrow$ {\color{blue}soluzioni veloci} abbassano target 
 			\newline $\;\;\;\;\text{\textit{i.e.}}$ generazione {\color{blue}problemi più difficili}, vv.
 		\item blocco risolto mediamente ogni 10 minuti
 	\end{itemize}
@@ -54,8 +51,8 @@
 	
 	in teoria\ldots
 	\begin{itemize}
-		\item {\color{blue}preimage} attack: $O(2^{256})$
-		\item {\color{blue}birthday} attack: $O(2^{\sfrac{256}{2}})$
+		\item {\color{blue}preimage attack} attack: $O(2^{256})$
+		\item {\color{blue}birthday attack}: $O(2^{\sfrac{256}{2}})$
 	\end{itemize}
 	
 	\ldots in pratica
@@ -63,8 +60,8 @@
 	\begin{table}
 	    \begin{tabular}{l|l|l|l}
 		    \textit{Metodo}             & \textit{Attacco}           & \textit{Iterazioni} & \textit{Complessità} \\ \hline
-		    deterministico     & collisione        & 24         & $2^{\red{28.5}}$ \\
-		    meet in the middle & preimmagine       & 42         & $2^{248.4}$ \\
+		    deterministico     & collisione        & 24         & $2^{28.5}$ \\  %TODO approfondire
+		    meet in the middle & preimmagine       & 42         & $2^{248.4}$ \\ %TODO approfondire
 		    differenziale      & pseudo collisione & 46         & $2^{178}$ \\
 		    biclique           & preimmagine       & 45         & $2^{255.5}$ \\
 	    \end{tabular}
@@ -75,14 +72,13 @@
 	\frametitle{Proof of Work}
 	\framesubtitle{prevenzione double spending}
 	
-	{\color{blue}spendere due volte la stessa $\mathfrak{T}$}
-	\begin{enumerate}
-		\item modifica $\orange{\mathfrak{I}^{out}}\;$ $\Rightarrow
-		\orange{\mathfrak{T}}$ stessa $\Rightarrow \orange{\mathfrak{B}}$ di appartenenza
-		\newline\;\;\; ricalcolo nonce $\orange{x}$
-		\item modifica $\mathfrak{B} \Rightarrow $ modifica $N$ blocchi successivi
-		\newline\;\;\; ricalcolo $N$ nonces $\Rightarrow$ {\color{blue}risolvere $N$ problemi esponenziali}
-	\end{enumerate}
+	per spendere due volte la stessa $\mathfrak{T}$ occorre
+	\begin{itemize}
+		\item modificarne gli output $\Rightarrow \mathfrak{T}$ stessa $\Rightarrow \mathfrak{B}$ di appartenenza
+		\item ricalcolare nonce $x$ per $\mathfrak{B}$ modificato
+		\item modifica $\mathfrak{B} \Rightarrow $ modifica di $N$ blocchi successivi
+		\item ricalcolare $N$ nonces $\Rightarrow$ risolvere $N$ problemi esponenziali
+	\end{itemize}
 	
 	\vspace{1pt}
 	
@@ -95,7 +91,7 @@
  	\end{figure}
  	{\color{blue}forking}
  	\begin{itemize}
- 	  \item \textit{policy}: aggiungere sempre a ramo più lungo
- 	  \item in una \textit{web of trust} sopravviverà il ramo corretto
+ 	  \item risolto imponendo aggiunta a ramo più lungo
+ 	  \item sotto ipotesi \textit{web of trust} sopravviverà il ramo corretto
  	\end{itemize}	
 \end{frame}

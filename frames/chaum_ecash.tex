@@ -4,19 +4,21 @@
 	
 	Scenario (\textit{e.g.} voto digitale)
 	\begin{itemize}
-	  \item sia $\orange{m}$ plaintext, $A$ autore e $F$ firmatario,\;\;$A\neq F$
-	  \item firma \textit{classica}: $S(\orange{m},\,\orange{K_{PR}^A})$
-	  \item firma \textit{{\color{blue}cieca}}: $S^\red{B}(\red{f}(\orange{m}),\,\orange{K}_{\orange{PR}}^\red{F})$
-	  \item $F$ non può calcolare $\orange{m}$ data $f(\orange{m})$  
+	  \item sia $\orange{m}$ plaintext, $A$ il suo autore e $F$ il firmatario 
+	  \item $A\neq F$
+	  \item firma \textit{classica}: $\orange{S}(\orange{m},\,\orange{K_{PR}^A})$
+	  \item firma \textit{{\color{blue}cieca}}: $\orange{S^B}(\orange{f}(\orange{m}),\,\orange{K_{PR}^F})$ 
+	  \item $F$ non può calcolare $\orange{m}$ data $\orange{f}(\orange{m})$  
 	\end{itemize}
-	
 	Algoritmo
 	\begin{enumerate}
 	  \item $A$ estrae \textit{nonce} $\orange{x}$
-	  \item $A$ invia $\orange{\overline{m}}=f(\orange{m},\,\orange{x})$ messaggio \textit{cieco} a $F$
-	  \item $F$ restituisce $\orange{s^B}=\orange{\overline{s}}=E(\orange{\overline{m}},\,\orange{K_{PR}^F})$ 
-	  \item chiunque conosca $\orange{K_{PB}^F}$ calcola $\orange{\overline{m}^S}=E(\orange{\overline{s}},\,\orange{K_{PB}^F})$
-	  \item \hspace{1pt}\;\;\;\;\;\;``\;\;\;\;\;\;\;\;\;\;\;\;\; ``\;\;\;\;\;\; pure $\orange{x}$ \;\;\;\;''\;\; $\orange{m^S}=f^{-1}(\orange{\overline{m}^S},\,\orange{x})$
+	  \item $A$ calcola e invia $\orange{\tilde{m}}=\orange{f}(\orange{m},\,\orange{x})$ messaggio \textit{blinded} 
+	  \item $F$ calcola e invia $\orange{\tilde{s}}=\orange{S}(\orange{\tilde{m}},\,\orange{K_{PR}^F}) 
+	  		\equiv \orange{S^B}(\orange{f}(\orange{m}),\,\orange{K_{PR}^F})$
+	  \item $A$ calcola $\orange{s}=\orange{f}^{-1}(\orange{\tilde{s}}.\orange{\tilde{m}},\,\orange{x})$ firma valida
 	\end{enumerate}
 
 \end{frame}
+
+%DIMOSTRAZIONE CON RSA

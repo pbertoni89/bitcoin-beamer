@@ -8,14 +8,14 @@
 
 {\color{blue}Alice}: scelta dei parametri \textbf{pubblici}
 	\begin{enumerate}
-	  \item $\orange{q}=2^\orange{m}$
-	  \item $(\orange{a},\,\orange{b}):\;4a^3+27b^2\neq 0$
+	  \item ${\color{orange}q}=2^m$
+	  \item ${\color{orange}(a,b)}:\;4a^3+27b^2\neq 0$
 	  \item ${\color{orange}G}=(x_G,\,y_G) \in \mathcal{E}_{(a,b)}(\mathbb{F}_q)$ 
-	  \item ${\color{orange}n}=o(G)$
+	  \item ${\color{orange}n}=o(G)$, \textit{i.e.} $n\times G=O$
 	\end{enumerate}
 {\color{blue}Alice}: generazione coppia chiavi
 	\begin{enumerate}
-	  \item $K^{PR}\triangleq {\color{orange}d_A}\leftarrow \mathrm{rand} \in[1,\,n-1]$
+	  \item $K^{PR}\triangleq {\color{orange}d_A}\leftarrow \mathrm{rand} \in[1,n-1]$
 	  \item $K^{PB}\triangleq {\color{orange}Q_A} \leftarrow {\color{orange}n}\times {\color{orange}d_A}$
 	\end{enumerate}
 {\color{blue}Bob}: verifica validità di $Q_A$ ricevuta
@@ -56,6 +56,6 @@
 	  \item $w=s^{-1} \mod n$ 
 	  \item $(u_1,\,u_2) \leftarrow (ew\mod n,\;rw \mod n)$
 	  \item $(x_1,\,y_1) \leftarrow u_1 \times G + u_2 \times Q$
-	  \item \textbf{ok} $\Leftrightarrow \orange{r} \equiv \orange{x_1} \mod \orange{n}$
+	  \item \textbf{ok} $\Leftrightarrow r \equiv x_1 \mod n$
 	\end{enumerate}
 \end{frame}

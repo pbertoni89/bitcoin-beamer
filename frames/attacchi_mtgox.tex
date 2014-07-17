@@ -1,48 +1,70 @@
 \begin{frame}
-\frametitle{caso di studio: MtGoX [2014]}
+\frametitle{caso di studio: Mt.GoX [2014]}
 \framesubtitle{prima del crollo}
 	
-	web service di {\color{blue} exchange} 
+	{\color{blue} exchange}
 	\begin{itemize}
-	  \item scambio valute \textit{fiat} con \bitcoinA
+	  \item web service di scambio valute \textit{fiat} con \bitcoinA
+	  \item 2011: compromissione account interno al perimetro $\Rightarrow$ furto \bitcoinA
 	  \item 2013: Blockchain fork in rami con regole diverse 
-	  \newline $\;\;\;\;\Rightarrow$ \textit{MtGox} sospende transazioni
+	  \newline $\;\;\;\;\Rightarrow$ MtGox sospende transazioni
 	\end{itemize}
 	
 	{\color{blue} malleabilità}
 	\begin{itemize}
-		\item $\orange{\mathfrak{T}^{ID}}\triangleq \orange{h}(\orange{\mathfrak{T}}),
-			\;\;\;\orange{\mathfrak{T}^S}\in\orange{\mathfrak{T}}\;\;\;\Rightarrow
-			\;\;\orange{\mathfrak{T}^{ID}}$ dipende dalla sua firma   
-	 	\item codice \textit{MtGox} accetta firme malformate
+		\item $\mathfrak{T}^{ID}\triangleq h(\mathfrak{T}),\;\;\;S\in\mathfrak{T}$
+	 	\item codice \textit{MtGox} non controlla la validità del formato di $S$
 	 	\item problema $\in$ implementazione, $\mathbf{\notin}$ protocollo \bitcoinA
-	 	\item $\exists$ altri exchanges più rigorosi $\Rightarrow$ immunità
+	 	\item $\exists$ altri sistemi migliori per proprio storico $\Rightarrow$ immunità
 	\end{itemize}
 
 \end{frame}
 
 \begin{frame}
-\frametitle{caso di studio: MtGoX [2014]}
+\frametitle{caso di studio: Mt.GoX [2014]}
 \framesubtitle{il crollo: attacco delle transazioni \textit{mutanti}}
 
 	{\color{blue} frode} di \textit{Eve} ai danni di \textit{MtGox}
  	\begin{enumerate}
- 	  	\item $M$ invia $\orange{\mathfrak{T}}$ a $E$ come prelievo
-	 	\item $E$ ritocca $\orange{\mathfrak{T}^S}$ prima della sua conferma
+ 	  	\item $M$ invia $\orange{\mathfrak{T}}$ a $E$ dopo legittima richiesta prelievo
+	 	\item $E$ ritocca $\orange{S}(\orange{\mathfrak{T}})$ prima della sua conferma
 	 	\item ora $\exists\,\orange{\tilde{\mathfrak{T}}}\equiv\orange{\mathfrak{T}},\;$ 
 	 			ma $\orange{h}(\orange{\tilde{\mathfrak{T}}})\neq \orange{h}(\orange{\mathfrak{T}}) \Rightarrow 
 	 			\orange{\tilde{\mathfrak{T}}^{ID}}\neq\orange{\mathfrak{T}^{ID}}$ 
-	 	\item $\orange{\tilde{\mathfrak{T}}}$ diffusa da $E$, confermata prima di $\orange{\mathfrak{T}}$
+	 	\item $\orange{\tilde{\mathfrak{T}}}$ diffusa da $E$ e confermata prima di $\orange{\mathfrak{T}}$
 	 	\item $\orange{\mathfrak{T}}$ non confermata perchè $\orange{\tilde{\mathfrak{T}}}$ invalido
-	 	\item $E$ fa complain a $M$ per $\orange{\mathfrak{T}}$ non ricevuta
+	 	\item $E$ manda un complain a $M$ per $\orange{\mathfrak{T}}$ non ricevuta
 	 	\item $M$ controlla il suo storico: $\orange{\mathfrak{T}}$ non è stata accettata
-	 	\item $M$ costretto a inviare rimborso $\orange{\mathfrak{T}^\prime}$
+	 	\item $M$ costretto a inviare $\orange{\mathfrak{T}^\prime}$ come rimborso
  	\end{enumerate}
 
 	{\color{blue} DDoS}
-	\begin{itemize}
-	  	\item grande sovraccarico, persino se c'è immunità
+	\begin{enumerate}
+	  	\item $M$ riceve tante transazioni mutanti
+	  	\item grande sovraccarico, persino se c'è resistenza a frode
 	  	\item latenza nelle risposte $\Rightarrow$ incertezza $\Rightarrow$ speculazione
-	\end{itemize}
+	\end{enumerate}
 
 \end{frame}
+
+% questa è L'ALTRA VERSIONE.
+% NON tutte le cose utilizzate nell'hash sono anche firmate
+% è possibile modificare una T in modo che l'hash ovviamente cambi, 
+% ma la firma resti valida!!!!
+% non è quindi safe accettare una catena di transazioni NON confermate
+
+%This would have left Mt. Gox's ledgers increasingly out of balance with the public blockchain record.
+
+% More importantly, the integrity of the Bitcoin network itself was never under threat. 
+% TXIDs are used only for tracking bitcoin transfers by second-layer software, and their malleability has no impact on the actual transfer of bitcoin. 
+% This is why the issue has not been a high priority for repair since it came to developers' attention in 2011.
+% "The core software itself, we made zero changes to it, and we plan to make zero changes to it," says Garzik. 
+%While the price of bitcoin staggered immediately following Mt. Gox's announcement, it rebounded as the limited nature of the problem became clear, 
+%and has remained stable since -- though still at about 50\% of its early-December high.
+
+% MENEZES!!!!!!
+% A public-key encryption scheme is said to be non-malleable if given a ciphertext, 
+% it is computationally infeasible to generate a different ciphertext such that the respective plaintexts are related in a known manner.
+% If a public-key encryption scheme is non-malleable, it is also semantically secure.
+
+

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2014.7.4)  4 JUL 2014 10:05
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2014.7.4)  4 JUL 2014 10:04
 entering extended mode
  restricted \write18 enabled.
  Source specials enabled.
@@ -1646,60 +1646,54 @@ LaTeX Font Info:    Font shape `T1/phv/b/n' will be
  [5
 
 ]
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 34.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 34.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 34.
-LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 6.29996pt on input line 34.
-LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 4.49997pt on input line 34.
-LaTeX Font Info:    Font shape `T1/phv/m/it' in size <9> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 34.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 36.
+LaTeX Font Info:    Font shape `T1/phv/m/it' in size <14.4> not available
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 36.
 LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
-(Font)              scaled to size 8.09995pt on input line 34.
-LaTeX Font Info:    Font shape `T1/phv/m/it' in size <7> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 34.
-LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
-(Font)              scaled to size 6.29996pt on input line 34.
-LaTeX Font Info:    Font shape `T1/phv/m/it' in size <5> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 34.
-LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
-(Font)              scaled to size 4.49997pt on input line 34.
+(Font)              scaled to size 12.9599pt on input line 36.
  [6
 
 ])
 (./frames/problema_proofofwork.tex
-LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <9> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 20.
-LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 8.09995pt on input line 20.
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 8.99994pt on input line 24.
  [7
 
-]) (./frames/diffeuro.tex
-<images/euro.png, id=191, 409.53pt x 409.53pt>
+]) (./document.toc) [8
+
+]
+(./frames/diffeuro.tex <images/euro.png, id=228, 409.53pt x 409.53pt>
 File: images/euro.png Graphic file (type png)
- <use images/euro.png>
+
+<use images/euro.png>
 Package pdftex.def Info: images/euro.png used on input line 26.
 (pdftex.def)             Requested size: 28.45274pt x 28.45131pt.
-
-<images/bitcoin.png, id=192, 531.9875pt x 527.9725pt>
+ <images/bitcoin.png, id=229, 531.9875pt x 527.9725pt>
 File: images/bitcoin.png Graphic file (type png)
- <use images/bitcoin.png>
+
+<use images/bitcoin.png>
 Package pdftex.def Info: images/bitcoin.png used on input line 26.
 (pdftex.def)             Requested size: 28.45274pt x 28.23698pt.
 
-[8
+Overfull \hbox (11.15128pt too wide) in paragraph at lines 26--26
+ [][] 
+ []
 
- <./images/euro.png> <./images/bitcoin.png>]) (./frames/chaum_ecash.tex
 [9
 
-]) (./document.toc) [10
+ <./images/euro.png> <./images/bitcoin.png>]) (./frames/chaum_ecash.tex
+LaTeX Font Info:    Font shape `T1/phv/m/it' in size <9> not available
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 22.
+LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
+(Font)              scaled to size 8.09995pt on input line 22.
+
+[10
+
+]) (./document.toc) [11
 
 ] (./frames/teoria_ec.tex
-<images/eca.png, id=241, 963.6pt x 682.55pt>
+<images/eca.png, id=283, 963.6pt x 682.55pt>
 File: images/eca.png Graphic file (type png)
  <use images/eca.png>
 Package pdftex.def Info: images/eca.png used on input line 30.
@@ -1709,96 +1703,91 @@ Overfull \hbox (77.91876pt too wide) in paragraph at lines 30--30
 [][]  
  []
 
-[11
+[12
 
  <./images/eca.png>]
-LaTeX Font Info:    Try loading font information for T1+ptm on input line 59.
+LaTeX Font Info:    Try loading font information for T1+ptm on input line 58.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1ptm.fd
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
-) [12
-
-]
-<images/ecalgebrarow.png, id=273, 572.1375pt x 184.43906pt>
+)
+<images/ecalgebrarow.png, id=302, 572.1375pt x 184.43906pt>
 File: images/ecalgebrarow.png Graphic file (type png)
 
 <use images/ecalgebrarow.png>
-Package pdftex.def Info: images/ecalgebrarow.png used on input line 73.
-(pdftex.def)             Requested size: 312.9803pt x 100.89581pt.
+Package pdftex.def Info: images/ecalgebrarow.png used on input line 58.
+(pdftex.def)             Requested size: 264.78404pt x 85.35826pt.
 
-Overfull \hbox (21.54535pt too wide) in paragraph at lines 73--73
- [][] 
+Overfull \vbox (5.02722pt too high) detected at line 58
  []
 
 [13
 
  <./images/ecalgebrarow.png>]
 
-LaTeX Font Warning: Command \tiny invalid in math mode on input line 96.
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 81.
 
 
-LaTeX Font Warning: Command \tiny invalid in math mode on input line 96.
+LaTeX Font Warning: Command \tiny invalid in math mode on input line 81.
 
 [14
 
 ]) (./frames/teoria_hash.tex
-LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 8.99994pt on input line 22.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 22.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 24.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 22.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 24.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 6.65994pt on input line 22.
+(Font)              scaled to size 6.65994pt on input line 24.
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <10> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 22.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 24.
 LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
-(Font)              scaled to size 8.99994pt on input line 22.
+(Font)              scaled to size 8.99994pt on input line 24.
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <7.4> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 22.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 24.
 LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
-(Font)              scaled to size 6.65994pt on input line 22.
+(Font)              scaled to size 6.65994pt on input line 24.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 6.29993pt on input line 22.
-LaTeX Font Info:    Calculating math sizes for size <6.99997> on input line 22.
+(Font)              scaled to size 6.29993pt on input line 24.
+LaTeX Font Info:    Calculating math sizes for size <6.99997> on input line 24.
 
 
 
 LaTeX Font Warning: Font shape `OT1/cmss/m/n' in size <4.20001> not available
-(Font)              size <5> substituted on input line 22.
+(Font)              size <5> substituted on input line 24.
 
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6.99997> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 22.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 24.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5.18001> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 22.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 24.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <4.20001> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 22.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 24.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 4.66197pt on input line 22.
+(Font)              scaled to size 4.66197pt on input line 24.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 3.77998pt on input line 22.
+(Font)              scaled to size 3.77998pt on input line 24.
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <6.99997> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 22.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 24.
 LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
-(Font)              scaled to size 6.29993pt on input line 22.
+(Font)              scaled to size 6.29993pt on input line 24.
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <5.18001> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 22.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 24.
 LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
-(Font)              scaled to size 4.66197pt on input line 22.
+(Font)              scaled to size 4.66197pt on input line 24.
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <4.20001> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 22.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 24.
 LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
-(Font)              scaled to size 3.77998pt on input line 22.
+(Font)              scaled to size 3.77998pt on input line 24.
 [15
 
 ]) (./frames/teoria_merkle.tex
-<images/merkle.png, id=312, 451.6875pt x 401.5pt>
+<images/merkle.png, id=344, 451.6875pt x 401.5pt>
 File: images/merkle.png Graphic file (type png)
  <use images/merkle.png>
-Package pdftex.def Info: images/merkle.png used on input line 29.
+Package pdftex.def Info: images/merkle.png used on input line 24.
 (pdftex.def)             Requested size: 128.03615pt x 113.81102pt.
 
-Overfull \hbox (5.12209pt too wide) in paragraph at lines 29--29
+Overfull \hbox (5.12209pt too wide) in paragraph at lines 24--24
 [][]  
  []
 
@@ -1808,282 +1797,288 @@ Overfull \hbox (5.12209pt too wide) in paragraph at lines 29--29
 
 ]
 (./frames/struct_transazione.tex
-LaTeX Font Info:    Try loading font information for TS1+phv on input line 24.
+LaTeX Font Info:    Try loading font information for TS1+phv on input line 28.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1phv.fd
 File: ts1phv.fd 2001/06/04 scalable font definitions for TS1/phv.
 )
 LaTeX Font Info:    Font shape `TS1/phv/m/n' will be
-(Font)              scaled to size 9.85492pt on input line 24.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 24.
-LaTeX Font Info:    Font shape `T1/phv/m/it' in size <14.4> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 24.
-LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
-(Font)              scaled to size 12.9599pt on input line 24.
+(Font)              scaled to size 9.85492pt on input line 28.
  [18
 
-]
-<images/ref.png, id=359, 431.36156pt x 371.13657pt>
-File: images/ref.png Graphic file (type png)
- <use images/ref.png>
-Package pdftex.def Info: images/ref.png used on input line 36.
-(pdftex.def)             Requested size: 231.4903pt x 199.16928pt.
-
-Overfull \vbox (10.36932pt too high) detected at line 36
- []
-
-[19
-
- <./images/ref.png>]) (./frames/struct_blocco.tex [20
-
 ])
-(./frames/passg_transazioni_blocchi.tex
-<images/chain_transactions.png, id=386, 483.8075pt x 301.125pt>
+(./frames/struct_blocco.tex [19
+
+]) (./frames/passg_transazioni_blocchi.tex
+<images/chain_transactions.png, id=407, 483.8075pt x 301.125pt>
 File: images/chain_transactions.png Graphic file (type png)
 
 <use images/chain_transactions.png>
 Package pdftex.def Info: images/chain_transactions.png used on input line 17.
 (pdftex.def)             Requested size: 205.7225pt x 128.0374pt.
 
-Overfull \vbox (0.83015pt too high) detected at line 17
+Overfull \vbox (0.71184pt too high) detected at line 17
  []
 
-[21
+[20
 
  <./images/chain_transactions.png>]) (./frames/passg_blocchi_blockchain.tex
-<images/blockchain.png, id=399, 500.62032pt x 258.21469pt>
+<images/blockchain.png, id=420, 500.62032pt x 258.21469pt>
 File: images/blockchain.png Graphic file (type png)
 
 <use images/blockchain.png>
 Package pdftex.def Info: images/blockchain.png used on input line 16.
 (pdftex.def)             Requested size: 248.23941pt x 128.0374pt.
- [22
+ [21
 
  <./images/blockchain.png>])
-(./frames/motivazione_fees.tex [23
+(./frames/motivazione_coinbase.tex
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 23.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 23.
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 6.29996pt on input line 23.
+LaTeX Font Info:    Font shape `T1/phv/m/it' in size <7> not available
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 23.
+LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
+(Font)              scaled to size 6.29996pt on input line 23.
+ [22
 
-]) (./frames/motivazione_coinbase.tex
-[24
+]) (./frames/motivazione_fees.tex
+[23
 
-]) (./document.toc) [25
+]) (./document.toc) [24
 
-] (./frames/primitive_ecdsa.tex [26
+] (./frames/primitive_ecdsa.tex [25
+
+] [26
 
 ] [27
-
-] [28
 
 ])
 (./frames/primitive_sha256.tex
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 6.89839pt on input line 33.
-LaTeX Font Info:    Calculating math sizes for size <7.66495> on input line 33.
+(Font)              scaled to size 6.89839pt on input line 29.
+LaTeX Font Info:    Calculating math sizes for size <7.66495> on input line 29.
 
 
 
 LaTeX Font Warning: Font shape `OT1/cmss/m/n' in size <4.59901> not available
-(Font)              size <5> substituted on input line 33.
+(Font)              size <5> substituted on input line 29.
 
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.66495> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 33.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 29.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5.67209> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 33.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 29.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <4.59901> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 33.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 29.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 5.10484pt on input line 33.
+(Font)              scaled to size 5.10484pt on input line 29.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 4.13908pt on input line 33.
+(Font)              scaled to size 4.13908pt on input line 29.
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <7.66495> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 33.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 29.
 LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
-(Font)              scaled to size 6.89839pt on input line 33.
+(Font)              scaled to size 6.89839pt on input line 29.
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <5.67209> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 33.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 29.
 LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
-(Font)              scaled to size 5.10484pt on input line 33.
+(Font)              scaled to size 5.10484pt on input line 29.
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <4.59901> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 33.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 29.
 LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
-(Font)              scaled to size 4.13908pt on input line 33.
-<images/sha2.png, id=497, 803.0pt x 567.11874pt>
+(Font)              scaled to size 4.13908pt on input line 29.
+<images/sha2.png, id=519, 803.0pt x 567.11874pt>
 File: images/sha2.png Graphic file (type png)
  <use images/sha2.png>
-Package pdftex.def Info: images/sha2.png used on input line 33.
+Package pdftex.def Info: images/sha2.png used on input line 29.
 (pdftex.def)             Requested size: 161.13628pt x 113.81102pt.
 
-Overfull \hbox (4.55153pt too wide) detected at line 33
+Overfull \hbox (4.55153pt too wide) detected at line 29
 [][][] $[]$[][][][][][][][] $[]$[][][][][][] 
  []
 
-[29
+[28
 
- <./images/sha2.png>]) (./document.toc) [30
+ <./images/sha2.png>]) (./document.toc) [29
 
 ] (./frames/sicurezza_firme.tex
-[31
+[30
 
-]) (./frames/sicurezza_pow.tex [32
+]) (./frames/sicurezza_pow.tex [31
+
+] [32
 
 ] [33
 
 ] [34
 
-] [35
-
 ]
-<images/dspending_ppt.png, id=596, 524.1984pt x 79.9788pt>
+<images/dspending_ppt.png, id=618, 524.1984pt x 79.9788pt>
 File: images/dspending_ppt.png Graphic file (type png)
 
 <use images/dspending_ppt.png>
-Package pdftex.def Info: images/dspending_ppt.png used on input line 101.
+Package pdftex.def Info: images/dspending_ppt.png used on input line 97.
 (pdftex.def)             Requested size: 312.9803pt x 47.75333pt.
 
-Overfull \hbox (21.54535pt too wide) in paragraph at lines 101--101
+Overfull \hbox (21.54535pt too wide) in paragraph at lines 97--97
  [] 
  []
 
-[36
+[35
 
- <./images/dspending_ppt.png>]) (./frames/sicurezza_weboftrust.tex [37
-
-])
-(./document.toc) [38
-
-] (./frames/attacchi_forgiatura.tex [39
+ <./images/dspending_ppt.png>]) (./frames/sicurezza_weboftrust.tex [36
 
 ])
-(./frames/attacchi_mtgox.tex [40
+(./document.toc) [37
 
-] [41
+] (./frames/attacchi_forgiatura.tex [38
 
-]) (./document.toc) [42
+])
+(./frames/attacchi_mtgox.tex [39
+
+] [40
+
+]) (./document.toc) [41
 
 ]
 (./frames/attacchi_anonimita.tex
-<images/anon_1.png, id=704, 436.63126pt x 313.17pt>
+<images/anon_1.png, id=730, 436.63126pt x 313.17pt>
 File: images/anon_1.png Graphic file (type png)
  <use images/anon_1.png>
-Package pdftex.def Info: images/anon_1.png used on input line 13.
+Package pdftex.def Info: images/anon_1.png used on input line 23.
 (pdftex.def)             Requested size: 238.02261pt x 170.71652pt.
+LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <9> not available
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 23.
+LaTeX Font Info:    Font shape `T1/phv/b/n' will be
+(Font)              scaled to size 8.09995pt on input line 23.
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <7> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 13.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 23.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 6.29996pt on input line 13.
+(Font)              scaled to size 6.29996pt on input line 23.
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <5> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 13.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 23.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 4.49997pt on input line 13.
+(Font)              scaled to size 4.49997pt on input line 23.
 
-[43
+[42
 
- <./images/anon_1.png>] <images/anon_2.png, id=718, 441.65pt x 313.17pt>
+ <./images/anon_1.png>] <images/anon_2.png, id=743, 441.65pt x 313.17pt>
 File: images/anon_2.png Graphic file (type png)
 
 <use images/anon_2.png>
-Package pdftex.def Info: images/anon_2.png used on input line 27.
+Package pdftex.def Info: images/anon_2.png used on input line 49.
 (pdftex.def)             Requested size: 240.75848pt x 170.71652pt.
- [44
+ [43
 
  <./images/anon_2.png>]
-<images/anon_3.png, id=731, 430.60875pt x 332.24126pt>
+<images/anon_3.png, id=757, 430.60875pt x 332.24126pt>
 File: images/anon_3.png Graphic file (type png)
  <use images/anon_3.png>
-Package pdftex.def Info: images/anon_3.png used on input line 41.
+Package pdftex.def Info: images/anon_3.png used on input line 78.
 (pdftex.def)             Requested size: 221.26332pt x 170.71652pt.
+
+[44
+
+ <./images/anon_3.png>]
+<images/anon_4.png, id=770, 400.49625pt x 344.28625pt>
+File: images/anon_4.png Graphic file (type png)
+ <use images/anon_4.png>
+Package pdftex.def Info: images/anon_4.png used on input line 100.
+(pdftex.def)             Requested size: 198.58542pt x 170.71652pt.
+
+Overfull \vbox (19.74284pt too high) detected at line 100
+ []
 
 [45
 
- <./images/anon_3.png>]
-<images/anon_4.png, id=745, 400.49625pt x 344.28625pt>
-File: images/anon_4.png Graphic file (type png)
- <use images/anon_4.png>
-Package pdftex.def Info: images/anon_4.png used on input line 60.
-(pdftex.def)             Requested size: 198.58542pt x 170.71652pt.
-
-Overfull \vbox (19.74284pt too high) detected at line 60
- []
-
-[46
-
- <./images/anon_4.png>]) (./document.toc) [47
+ <./images/anon_4.png>]) (./document.toc) [46
 
 ]
 (./frames/attacchi_dspending.tex
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <10> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 20.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 24.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 8.99994pt on input line 20.
+(Font)              scaled to size 8.99994pt on input line 24.
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <7.4> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 20.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 24.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 6.65994pt on input line 20.
- [48
-
-] [49
+(Font)              scaled to size 6.65994pt on input line 24.
+ [47
 
 ]
-<images/dspending_2.png, id=805, 476.78125pt x 429.605pt>
+<images/dspending_1.png, id=818, 488.82625pt x 277.035pt>
+File: images/dspending_1.png Graphic file (type png)
+
+<use images/dspending_1.png>
+Package pdftex.def Info: images/dspending_1.png used on input line 42.
+(pdftex.def)             Requested size: 276.12767pt x 156.49014pt.
+ [48
+
+ <./images/dspending_1.png>] [49
+
+]
+<images/dspending_2.png, id=845, 476.78125pt x 429.605pt>
 File: images/dspending_2.png Graphic file (type png)
 
 <use images/dspending_2.png>
-Package pdftex.def Info: images/dspending_2.png used on input line 102.
+Package pdftex.def Info: images/dspending_2.png used on input line 117.
 (pdftex.def)             Requested size: 173.67813pt x 156.49014pt.
 
-Overfull \hbox (5.15726pt too wide) in paragraph at lines 102--102
+Overfull \hbox (5.15726pt too wide) in paragraph at lines 117--117
  [] 
  []
 
 
-Overfull \hbox (7.62744pt too wide) detected at line 102
+Overfull \hbox (7.62744pt too wide) detected at line 117
 [][][] $[]$[][][][][][][][] $[]$[][][][][][] 
  []
 
 [50
 
  <./images/dspending_2.png>]
-<images/dspending_3.png, id=818, 440.64626pt x 320.19624pt>
+<images/dspending_3.png, id=858, 440.64626pt x 320.19624pt>
 File: images/dspending_3.png Graphic file (type png)
 
 <use images/dspending_3.png>
-Package pdftex.def Info: images/dspending_3.png used on input line 141.
+Package pdftex.def Info: images/dspending_3.png used on input line 157.
 (pdftex.def)             Requested size: 185.9913pt x 135.15059pt.
 
-Overfull \hbox (17.47043pt too wide) in paragraph at lines 141--141
+Overfull \hbox (17.47043pt too wide) in paragraph at lines 157--157
  [] 
  []
 
 
-Overfull \vbox (17.71991pt too high) detected at line 141
+Overfull \vbox (7.5199pt too high) detected at line 157
  []
 
 [51
 
  <./images/dspending_3.png>]
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <7.66495> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 170.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 197.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 6.89839pt on input line 170.
+(Font)              scaled to size 6.89839pt on input line 197.
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <5.67209> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 170.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 197.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 5.10484pt on input line 170.
+(Font)              scaled to size 5.10484pt on input line 197.
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <4.59901> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 170.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 197.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 4.13908pt on input line 170.
+(Font)              scaled to size 4.13908pt on input line 197.
  [52
 
 ]
-<images/dspending_4.png, id=845, 480.79625pt x 259.97125pt>
+<images/dspending_4.png, id=885, 480.79625pt x 259.97125pt>
 File: images/dspending_4.png Graphic file (type png)
 
 <use images/dspending_4.png>
-Package pdftex.def Info: images/dspending_4.png used on input line 191.
+Package pdftex.def Info: images/dspending_4.png used on input line 221.
 (pdftex.def)             Requested size: 236.79538pt x 128.0374pt.
 
-Overfull \vbox (13.73003pt too high) detected at line 191
+Overfull \vbox (13.73003pt too high) detected at line 221
  []
 
 [53
@@ -2098,26 +2093,26 @@ Overfull \vbox (13.73003pt too high) detected at line 191
 \tf@snm=\write8
 \openout8 = `document.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 105.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 105.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 108.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 108.
  (./document.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 105.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 105.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 108.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 108.
 Package rerunfilecheck Info: File `document.out' has not changed.
-(rerunfilecheck)             Checksum: DC6F2B0B77DE2CA6316AFBDC557FA0C2;693.
+(rerunfilecheck)             Checksum: BB7F3BCA8084AB8F75FCB789097DDAA7;755.
 
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 2.48pt have occurred.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 105.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 108.
  ) 
 Here is how much of TeX's memory you used:
- 23325 strings out of 495059
- 428863 string characters out of 3182031
- 490533 words of memory out of 3000000
- 25663 multiletter control sequences out of 15000+200000
- 293907 words of font info for 398 fonts, out of 3000000 for 9000
+ 23304 strings out of 495059
+ 427929 string characters out of 3182031
+ 492701 words of memory out of 3000000
+ 25633 multiletter control sequences out of 15000+200000
+ 298142 words of font info for 403 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
  49i,19n,67p,437b,1193s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
@@ -2128,18 +2123,18 @@ f-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist
 public/amsfonts/cm/cmss9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
 amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
 ts/euler/eufm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
-symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/s
-ymbols/msbm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/rsfs/rsfs10
-.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/s
-hare/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive
-/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb></usr/share/texlive/texmf-dist
-/fonts/type1/urw/symbol/usyr.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw
-/symbol/usyr.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pf
-b>
-Output written on document.pdf (53 pages, 1111935 bytes).
+euler/eufm7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symb
+ols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbo
+ls/msbm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb
+></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share
+/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb></usr/share/texlive/texmf-dist/fon
+ts/type1/urw/symbol/usyr.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/sym
+bol/usyr.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
+Output written on document.pdf (53 pages, 1068712 bytes).
 PDF statistics:
- 940 PDF objects out of 1000 (max. 8388607)
- 813 compressed objects within 9 object streams
- 118 named destinations out of 1000 (max. 500000)
- 283 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 982 PDF objects out of 1000 (max. 8388607)
+ 855 compressed objects within 9 object streams
+ 119 named destinations out of 1000 (max. 500000)
+ 291 words of extra memory for PDF output out of 10000 (max. 10000000)
 

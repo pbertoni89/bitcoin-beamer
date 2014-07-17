@@ -3,28 +3,30 @@
 		\framesubtitle{transazioni Coinbase $\mathfrak{C}$}
 		
 		\begin{itemize}
-			\item $\forall \orange{\mathfrak{B}},\; \exists!\:\orange{\mathfrak{C}}$
-			\item inputs: $\orange{\emptyset}$
-			\item outputs: ricompensa a {\color{blue}miners risolutori} di $\mathfrak{B}$ 
+			\item $\forall \mathfrak{B},\; \exists!\:\mathfrak{C}$
+			\item inputs: $\emptyset$
+			\item outputs: miners che han risolto $\mathfrak{B}$ 
+			\item ricompensa 
 			\begin{itemize}
-				\item \textit{coinbase}
-				\begin{itemize}
-				  	\item \orange{50} \bitcoinA\; iniziali
-					\item dimezzata ogni 210K blocchi risolti
-					\item nulla dopo 6.93M blocchi
-				\end{itemize}
-				\item $\{\orange{\mathfrak{F}}\} \in \orange{\mathfrak{B}}$
+			  	\item 50 \bitcoinA\; iniziali [2009]
+				\item dimezzata ogni 210K blocchi risolti %SAY formalmente è una funzione dell'altezza blockchain
+				\item nulla dopo 6.93M blocchi $\;\;\;[$previsto 2140 A.D.$]$
+				\newline $\;\;\;\Rightarrow \;\; \sum_{i=0}^{6.93M-1}{\frac{50}{2^{\lfloor\sfrac{i}{210K}\rfloor}}}=21M$ \bitcoinA 	
 			\end{itemize}
 			\item inflazione 
 			\begin{itemize}
-				\item dettata solo da mining
-				\item limitata
-					$$\sum_{i=0}^{6.93M-1}{\frac{50}{2^{\lfloor\sfrac{i}{210K}\rfloor}}}=\orange{21M}\;\bitcoinA $$ 	
+				\item dettata solo da mining %SAY poco controllabile
+				\item limitata %SAY somma massima in circolazione non modificabile
 			\end{itemize}
 		\end{itemize}
 		
 \end{frame}
- 
+
+% A special kind of transaction, called a coinbase transaction, has no inputs. 
+% It is created by miners, and there is one coinbase transaction per block. 
+% 
+% Because each block comes with a reward of newly created Bitcoins (e.g. 50 BTC for the first 210,000 blocks), 
+% the first transaction of a block is, with few exceptions, the transaction that grants those coins to their recipient (the miner). 
 % In addition to the newly created Bitcoins, the coinbase transaction is also used for assigning the recipient of any transaction fees 
 % that were paid within the other transactions being included in the same block. 
 % 
