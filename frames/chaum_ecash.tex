@@ -1,0 +1,22 @@
+\begin{frame}
+	\frametitle{i primordi: eCash [Chaum]}
+	\framesubtitle{sistema di firma digitale a \textit{conoscenza zero}}
+	
+	Scenario (\textit{e.g.} voto digitale)
+	\begin{itemize}
+	  \item sia $\orange{m}$ plaintext, $A$ autore e $F$ firmatario,\;\;$A\neq F$
+	  \item firma \textit{classica}: $S(\orange{m},\,\orange{K_{PR}^A})$
+	  \item firma \textit{{\color{blue}cieca}}: $S^\red{B}(\red{f}(\orange{m}),\,\orange{K}_{\orange{PR}}^\red{F})$
+	  \item $F$ non può calcolare $\orange{m}$ data $f(\orange{m})$  
+	\end{itemize}
+	
+	Algoritmo
+	\begin{enumerate}
+	  \item $A$ estrae \textit{nonce} $\orange{x}$
+	  \item $A$ invia $\orange{\overline{m}}=f(\orange{m},\,\orange{x})$ messaggio \textit{cieco} a $F$
+	  \item $F$ restituisce $\orange{s^B}=\orange{\overline{s}}=E(\orange{\overline{m}},\,\orange{K_{PR}^F})$ 
+	  \item chiunque conosca $\orange{K_{PB}^F}$ calcola $\orange{\overline{m}^S}=E(\orange{\overline{s}},\,\orange{K_{PB}^F})$
+	  \item \hspace{1pt}\;\;\;\;\;\;``\;\;\;\;\;\;\;\;\;\;\;\;\; ``\;\;\;\;\;\; pure $\orange{x}$ \;\;\;\;''\;\; $\orange{m^S}=f^{-1}(\orange{\overline{m}^S},\,\orange{x})$
+	\end{enumerate}
+
+\end{frame}

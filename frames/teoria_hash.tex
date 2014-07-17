@@ -1,0 +1,22 @@
+\begin{frame}
+	\frametitle{Funzioni di Hash One Way}
+
+	\begin{itemize}
+		\item $\orange{h}:\orange{\mathbb{Z}}\rightarrow \orange{\mathbb{Z}_n}$ non iniettiva
+
+		\item resistenza a
+		\begin{itemize}
+			\item preimmagine $\rightarrow$ ricerca \textit{bruta} è $O(\orange{2^n})$
+			\item collisioni deboli $\rightarrow$ \;\;\;\;\; ''\;\;\;\;\; ''\;\;\;\;\; ''
+			\item collisioni forti $\rightarrow$ \textit{birthday}: ricerca \textit{bruta} è $O(\orange{2^{\sfrac{n}{2}}}) \ll O(2^n)$
+		\end{itemize}
+		
+		\item usate soprattutto per
+		\begin{itemize}
+		  \item autenticazione
+		  \item integrità
+		\end{itemize}
+		\item spesso firmato il {\color{blue}digest} $\orange{h}(\orange{m})$ anzichè $\orange{m}$
+	\end{itemize}
+
+\end{frame}

@@ -1,0 +1,13 @@
+\beamer@endinputifotherversion {3.33pt}
+\select@language {italian}
+\beamer@sectionintoc {1}{Introduzione}{3}{0}{1}
+\beamer@subsectionintoc {1}{1}{Definizione di una criptovaluta}{3}{0}{1}
+\beamer@subsectionintoc {1}{2}{Elementi teorici}{10}{0}{1}
+\beamer@sectionintoc {2}{Protocollo}{17}{0}{2}
+\beamer@subsectionintoc {2}{1}{Strutture dati}{17}{0}{2}
+\beamer@subsectionintoc {2}{2}{Primitive criptografiche}{25}{0}{2}
+\beamer@subsectionintoc {2}{3}{Modello formale di sicurezza}{30}{0}{2}
+\beamer@sectionintoc {3}{Attacchi tipici}{38}{0}{3}
+\beamer@subsectionintoc {3}{1}{Forgiatura}{38}{0}{3}
+\beamer@subsectionintoc {3}{2}{Anonimit\IeC {\`a}}{42}{0}{3}
+\beamer@subsectionintoc {3}{3}{Double spending}{47}{0}{3}

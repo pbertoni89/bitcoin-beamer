@@ -1,0 +1,24 @@
+\begin{frame}
+	\frametitle{Firma digitale}
+	
+	\begin{itemize}
+		\item $|K_{ECC}|=256$ bit $\simeq |K_{RSA}|=3072 $ bit
+		\item $\orange{q}\simeq 10^{\orange{77}},\;\;\orange{n}\simeq 10^{\orange{69}},
+				\;\;\mathcal{E}:y^2=x^3+\orange{0}x+\orange{7}$
+	\end{itemize}
+	
+	\begin{itemize}
+	  	\item {\color{blue} meet in the middle} [Shank]: $\;\;\;\;\Omega(\sqrt{\orange{q}})$
+		\item nonce $\orange{k}$ è confidenziale: $\;\;\;\;d=\red{r}^{-1}(k\red{s}-\red{e})$
+		\item {\color{blue} replay attack:} nonce deve tale
+		\begin{enumerate}%[label=\Alph*]
+		  	\item[a)] $r_1=r_2=r$
+			\item[b)] $\red{s_1}\equiv k^{-1}(\red{e_1}+d\red{r})\mod \red{n}$ 
+					  $,\;\;\;\; \red{s_2}\equiv k^{-1}(\red{e_2}+d\red{r})\mod \red{n}$
+			\item[c)] $k(s_1-s_2)\equiv(e_1-e_2)\mod n$
+			\item[d)] $m_1\neq m_2 \Rightarrow (s_1-s_2)\neq 0\Rightarrow
+			k\equiv(s_1-s_2)^{-1}(e_1-e_2)\mod n$
+		\end{enumerate}
+	\end{itemize} 
+
+\end{frame}

@@ -1,0 +1,48 @@
+\begin{frame}
+\frametitle{caso di studio: MtGoX [2014]}
+\framesubtitle{prima del crollo}
+	
+	web service di {\color{blue} exchange} 
+	\begin{itemize}
+	  \item scambio valute \textit{fiat} con \bitcoinA
+	  \item 2013: Blockchain fork in rami con regole diverse 
+	  \newline $\;\;\;\;\Rightarrow$ \textit{MtGox} sospende transazioni
+	\end{itemize}
+	
+	{\color{blue} malleabilità}
+	\begin{itemize}
+		\item $\orange{\mathfrak{T}^{ID}}\triangleq \orange{h}(\orange{\mathfrak{T}}),
+			\;\;\;\orange{\mathfrak{T}^S}\in\orange{\mathfrak{T}}\;\;\;\Rightarrow
+			\;\;\orange{\mathfrak{T}^{ID}}$ dipende dalla sua firma   
+	 	\item codice \textit{MtGox} accetta firme malformate
+	 	\item problema $\in$ implementazione, $\mathbf{\notin}$ protocollo \bitcoinA
+	 	\item $\exists$ altri exchanges più rigorosi $\Rightarrow$ immunità
+	\end{itemize}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{caso di studio: MtGoX [2014]}
+\framesubtitle{il crollo: attacco delle transazioni \textit{mutanti}}
+
+	{\color{blue} frode} di \textit{Eve} ai danni di \textit{MtGox}
+ 	\begin{enumerate}
+ 	  	\item $M$ invia $\orange{\mathfrak{T}}$ a $E$ come prelievo
+	 	\item $E$ ritocca $\orange{\mathfrak{T}^S}$ prima della sua conferma
+	 	\item ora $\exists\,\orange{\tilde{\mathfrak{T}}}\equiv\orange{\mathfrak{T}},\;$ 
+	 			ma $\orange{h}(\orange{\tilde{\mathfrak{T}}})\neq \orange{h}(\orange{\mathfrak{T}}) \Rightarrow 
+	 			\orange{\tilde{\mathfrak{T}}^{ID}}\neq\orange{\mathfrak{T}^{ID}}$ 
+	 	\item $\orange{\tilde{\mathfrak{T}}}$ diffusa da $E$, confermata prima di $\orange{\mathfrak{T}}$
+	 	\item $\orange{\mathfrak{T}}$ non confermata perchè $\orange{\tilde{\mathfrak{T}}}$ invalido
+	 	\item $E$ fa complain a $M$ per $\orange{\mathfrak{T}}$ non ricevuta
+	 	\item $M$ controlla il suo storico: $\orange{\mathfrak{T}}$ non è stata accettata
+	 	\item $M$ costretto a inviare rimborso $\orange{\mathfrak{T}^\prime}$
+ 	\end{enumerate}
+
+	{\color{blue} DDoS}
+	\begin{itemize}
+	  	\item grande sovraccarico, persino se c'è immunità
+	  	\item latenza nelle risposte $\Rightarrow$ incertezza $\Rightarrow$ speculazione
+	\end{itemize}
+
+\end{frame}

@@ -1,0 +1,24 @@
+\begin{frame}
+	\frametitle{Blocco $\mathfrak{B}$}
+	\framesubtitle{struttura dati} 
+	
+	\begin{table}
+	  \centering
+	  \begin{tabular}{ll}
+	   	{\color{blue}Header} & {\color{blue}Payload} \\
+			\tabitem hash di $\orange{\mathfrak{B}_{i-1}^{\mathfrak{H}}}$ 
+				& \tabitem lista transazioni $\{\orange{\mathfrak{T}}\}_{\orange{\mathfrak{B}}}$ \\
+			\tabitem MerkleTree di $\{\orange{\mathfrak{T}}\}_\orange{\mathfrak{B}}$ \\
+			\tabitem timestamp $\orange{t}$ \\
+			\tabitem target $\orange{z}$ \\
+			\tabitem nonce $\orange{x}$ \\
+			\tabitem titolare della \textit{coinbase} $\orange{\mathfrak{C}}$
+	  \end{tabular}
+	\end{table}
+	
+	\begin{itemize}
+		\item durante \textit{mining} di $\mathfrak{B}$, campi continuamente modificati
+		\item $\mathfrak{B}$ descrive la propria \textit{proof of work}
+	\end{itemize}
+
+\end{frame}

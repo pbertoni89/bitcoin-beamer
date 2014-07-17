@@ -1,0 +1,39 @@
+\begin{frame}
+	\frametitle{Motivazione all'utilizzo}
+		\framesubtitle{transazioni Coinbase $\mathfrak{C}$}
+		
+		\begin{itemize}
+			\item $\forall \orange{\mathfrak{B}},\; \exists!\:\orange{\mathfrak{C}}$
+			\item inputs: $\orange{\emptyset}$
+			\item outputs: ricompensa a {\color{blue}miners risolutori} di $\mathfrak{B}$ 
+			\begin{itemize}
+				\item \textit{coinbase}
+				\begin{itemize}
+				  	\item \orange{50} \bitcoinA\; iniziali
+					\item dimezzata ogni 210K blocchi risolti
+					\item nulla dopo 6.93M blocchi
+				\end{itemize}
+				\item $\{\orange{\mathfrak{F}}\} \in \orange{\mathfrak{B}}$
+			\end{itemize}
+			\item inflazione 
+			\begin{itemize}
+				\item dettata solo da mining
+				\item limitata
+					$$\sum_{i=0}^{6.93M-1}{\frac{50}{2^{\lfloor\sfrac{i}{210K}\rfloor}}}=\orange{21M}\;\bitcoinA $$ 	
+			\end{itemize}
+		\end{itemize}
+		
+\end{frame}
+ 
+% In addition to the newly created Bitcoins, the coinbase transaction is also used for assigning the recipient of any transaction fees 
+% that were paid within the other transactions being included in the same block. 
+% 
+% The coinbase transaction can assign the entire reward to a single Bitcoin address, 
+% or split it in portions among multiple addresses, just like any other transaction. 
+% 
+% Coinbase transactions always contain outputs totaling 
+% the sum of the block reward plus all transaction fees collected from the other transactions in the same block.
+% The coinbase transaction in block zero cannot be spent. 
+% This is due to a quirk of the reference client implementation that would open the potential for a block chain fork 
+% if some nodes accepted the spend and others did not[1].
+% capito: significa che sicuramente nel primo blocco han circolato, ma dal secondo è come se si fossero congelati e divenuti inutilizzabili

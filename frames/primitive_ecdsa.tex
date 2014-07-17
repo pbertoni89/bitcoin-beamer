@@ -1,0 +1,61 @@
+% DOMANDE TEORICHE:
+% 1 - DIMOSTRARE CORRETTEZZA FIRMA
+% 2 - DIMOSTRARE ATTACCO CON STESSO K
+
+\begin{frame}
+	\frametitle{ECDSA}
+	\framesubtitle{inizializzazione}
+
+{\color{blue}Alice}: scelta dei parametri \textbf{pubblici}
+	\begin{enumerate}
+	  \item $\orange{q}=2^\orange{m}$
+	  \item $(\orange{a},\,\orange{b}):\;4a^3+27b^2\neq 0$
+	  \item ${\color{orange}G}=(x_G,\,y_G) \in \mathcal{E}_{(a,b)}(\mathbb{F}_q)$ 
+	  \item ${\color{orange}n}=o(G)$
+	\end{enumerate}
+{\color{blue}Alice}: generazione coppia chiavi
+	\begin{enumerate}
+	  \item $K^{PR}\triangleq {\color{orange}d_A}\leftarrow \mathrm{rand} \in[1,\,n-1]$
+	  \item $K^{PB}\triangleq {\color{orange}Q_A} \leftarrow {\color{orange}n}\times {\color{orange}d_A}$
+	\end{enumerate}
+{\color{blue}Bob}: verifica validità di $Q_A$ ricevuta
+	\begin{enumerate}
+	  \item $Q_A\neq O$
+	  \item $Q_A\in \mathcal{E}$
+	  \item $Q_A\times n=O$
+	\end{enumerate}
+\end{frame}
+% -----------------------------------------------------------------------------
+\begin{frame}
+\frametitle{ECDSA}
+\framesubtitle{firma digitale}
+
+	{\color{blue}Alice}: firma del messaggio ${\color{orange}m}$ 
+	\begin{enumerate}
+	  \item $e \leftarrow \mathrm{hash}(m)$  %se scommento sotto, diventa e
+	  % SOLO SU WIKI LETTA \item $z \leftarrow \lceil\log_2 n\rceil$ bit più a sinistra di $e$
+	  \item $k \leftarrow \mathrm{rand} \in [1,n] \subset \mathbb{N}$
+	  \item $(x_1,y_1) \leftarrow k \times G$
+	  \item $r \leftarrow x_1\mod n$ %\\ $\;\;\;\;$ 
+	  \item \textbf{if} $r=0$ \textbf{goto} 2
+	  \item $s \leftarrow k^{-1}(e+rd) \mod n$ %\\ $\;\;\;\;$ 
+	  \item \textbf{if} $s=0$ \textbf{goto} 2
+	  \item \textbf{return} $({\color{orange}r},\,{\color{orange}s})$
+	\end{enumerate}
+\end{frame}
+% -----------------------------------------------------------------------------
+\begin{frame}
+\frametitle{ECDSA}
+\framesubtitle{verifica firma}	
+
+	{\color{blue}Bob}: verifica firma $(r,s)$ di $m$
+	\begin{enumerate}
+	  \item $(r,\,s)\in [1,\,n-1]\times[1,\,n-1]$
+	  \item $e \leftarrow \mathrm{hash}(m)$  %se scommento sotto, diventa e
+	 	%SOLO SU WIKI LETTA \item $z \leftarrow \lceil\log_2 n\rceil$ bit più a sinistra di $e$
+	  \item $w=s^{-1} \mod n$ 
+	  \item $(u_1,\,u_2) \leftarrow (ew\mod n,\;rw \mod n)$
+	  \item $(x_1,\,y_1) \leftarrow u_1 \times G + u_2 \times Q$
+	  \item \textbf{ok} $\Leftrightarrow \orange{r} \equiv \orange{x_1} \mod \orange{n}$
+	\end{enumerate}
+\end{frame}

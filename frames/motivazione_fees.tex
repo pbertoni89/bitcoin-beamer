@@ -1,0 +1,23 @@
+\begin{frame}
+	\frametitle{Motivazione all'utilizzo}
+		\framesubtitle{fees $\mathfrak{F}$ sulle transazioni}
+		
+		$\forall$ transazione $\orange{\mathfrak{T}}$
+		\begin{itemize}
+			\item $\orange{\mathfrak{F}_\mathfrak{T}} = \sum_i^N \orange{\bitcoinA_i^{in}} - \sum_i^M \orange{\bitcoinA_i^{out}} \geq 0$
+			\item spetta a miners che risolvono $\mathfrak{B}\ni\mathfrak{T}$
+			\item $ \left \{
+					  \begin{array}{lcr}
+					    \text{\textbf{mai} obbligatoria, ma\ldots}\\ %SAY d'altronde
+					    \text{miners \textbf{mai} obbligati ad aggiungere}\;\mathfrak{T}\;\text{al proprio pool}  %SAY l'importante è risolvere il blocco, per loro un problema vale l'altro
+					  \end{array}
+					\right. $  
+		\end{itemize}
+		\vspace{5pt}
+		{\color{blue}incentivi} per
+		\begin{itemize}
+			\item velocizzare validazione $\mathfrak{T}$
+			\item \textit{mining} costante nonostante decrescita \textit{coinbase rewards}
+		\end{itemize}
+
+\end{frame}
